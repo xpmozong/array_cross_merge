@@ -1,0 +1,13 @@
+// $Id$
+// vim:ft=javascript
+
+// If your extension references something external, use ARG_WITH
+// ARG_WITH("array_cross_merge", "for array_cross_merge support", "no");
+
+// Otherwise, use ARG_ENABLE
+// ARG_ENABLE("array_cross_merge", "enable array_cross_merge support", "no");
+
+if (PHP_ARRAY_CROSS_MERGE != "no") {
+	EXTENSION("array_cross_merge", "array_cross_merge.c");
+}
+
